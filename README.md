@@ -41,6 +41,7 @@ It leverages **GPT-OSS-120B (Cerebras / HuggingFace)** and **Streamlit** for an 
 
 ## 📂 Project Structure
 
+```
 Rootcause-Ai/
 ├── .gitignore
 ├── LICENSE
@@ -53,7 +54,7 @@ Rootcause-Ai/
     ├── connectors.py   # Data ingestion connectors
     ├── simulator.py    # Incident simulation engine
     └── utils.py        # Utility functions (e.g., graph visualization)
-
+```
 
 ---
 
@@ -63,24 +64,35 @@ Rootcause-Ai/
 ```bash
 git clone https://github.com/your-username/rootcause_ai.git
 cd rootcause_ai
- 
+```
+
 ### 2️⃣ Create & activate a virtual environment
+```bash
 python -m venv venv
 source venv/bin/activate   # On macOS/Linux
 venv\Scripts\activate      # On Windows
+```
 
 ### 3️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ### 4️⃣ Run the Streamlit app
+```bash
 streamlit run app.py
-or
+# or
 python -m streamlit run app.py
+```
+
+---
 
 ## ⚙️ Configuration
 
-RootCause AI requires API keys for LLMs and connectors.
-You can configure them in the Streamlit sidebar or via environment variables:
+RootCause AI requires API keys for LLMs and connectors.  
+You can configure them in the **Streamlit sidebar** or via environment variables:
+
+```bash
 # LLM
 export OPENAI_API_KEY="your-openai-key"
 export HF_API_TOKEN="your-huggingface-token"
@@ -91,44 +103,52 @@ export GITHUB_TOKEN="your-github-token"
 # Datadog
 export DD_API_KEY="your-datadog-key"
 export DD_APP_KEY="your-datadog-app-key"
+```
 
-In the UI, you can also switch provider between:
+In the UI, you can also **switch provider** between:
+- `openai` (default GPT-4 / GPT-4o models)  
+- `huggingface` (`openai/gpt-oss-120b:cerebras`)
 
-openai (default GPT-4 / GPT-4o models)
-huggingface (openai/gpt-oss-120b:cerebras)
+---
 
-🧪 Example Usage
+## 🧪 Example Usage
 
-Simulate an incident:
+- **Simulate an incident:**
+  - Choose a scenario (e.g., database deadlock)  
+  - Generate events (logs, metrics, bug reports)  
+  - Run AI analysis for root cause and recommendations
 
-Choose a scenario (e.g., database deadlock)
+- **Upload logs / metrics:**  
+  Ingest your system data and let the AI build causal chains.
 
-Generate events (logs, metrics, bug reports)
+- **Ask in natural language:**  
+  > “What caused the API slowdown?”  
+  > “Show me recent anomalies.”  
+  > “Predict memory usage trends.”
 
-Run AI analysis for root cause and recommendations
+---
 
-Upload logs / metrics:
-Ingest your system data and let the AI build causal chains.
+## 📜 License
 
-Ask in natural language:
+This project is licensed under the **Apache License 2.0**.  
+See [LICENSE](./LICENSE) for details.
 
-“What caused the API slowdown?”
-“Show me recent anomalies.”
-“Predict memory usage trends.”
+---
 
-📜 License
+## 🌟 Star this Repo
 
-This project is licensed under the Apache License 2.0.
-See LICENSE
-🌟 Star this Repo
+If you find this project useful, consider **starring ⭐ the repo** to help others discover it!
 
-If you find this project useful, consider starring ⭐ the repo to help others discover it!
+---
 
-🤝 Contributing
+## 🤝 Contributing
 
-Contributions are welcome!
-Feel free to open an issue or pull request to improve RootCause AI.
+Contributions are welcome!  
+Feel free to open an **issue** or **pull request** to improve RootCause AI.
 
-📬 Contact
+---
 
-Author: Garvit Haswani
+## 📬 Contact
+
+- Author: **Garvit Haswani**
+- Email: **garvithaswani28@gmail.com
