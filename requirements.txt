@@ -1,0 +1,9 @@
+streamlit
+pandas
+networkx
+requests
+matplotlib
+numpy
+Pillow
+openai
+datadog-api-client
