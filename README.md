@@ -151,4 +151,4 @@ Feel free to open an **issue** or **pull request** to improve RootCause AI.
 ## 📬 Contact
 
 - Author: **Garvit Haswani**
-- Email: **garvithaswani28@gmail.com
+- Email: **garvithaswani28@gmail.com**
