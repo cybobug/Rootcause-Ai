@@ -6,4 +6,5 @@ matplotlib
 numpy
 Pillow
 openai
+plotly.express
 datadog-api-client
