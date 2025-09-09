@@ -8,3 +8,4 @@ Pillow
 openai
 plotly.express
 datadog-api-client
+huggingface_hub
