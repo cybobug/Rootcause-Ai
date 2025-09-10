@@ -870,10 +870,10 @@ def create_smart_recommendations():
         border_color = priority_colors.get(rec['priority'], '#38a169')
         
         st.markdown(f"""
-        <div class="recommendation-card" style="border-left-color: {border_color};">
-            <h4>{rec['title']} <span style="color: {border_color}; font-size: 0.8em;">[{rec['priority']}]</span></h4>
-            <p>{rec['description']}</p>
-            <div style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.9em;">
+        <div class="recommendation-card" style="border-left-color: {border_color}; color: #1a202c;">
+            <h4 style="color: #1a202c;">{rec['title']} <span style="color: {border_color}; font-size: 0.8em;">[{rec['priority']}]</span></h4>
+            <p style="color: #1a202c;">{rec['description']}</p>
+            <div style="display: flex; justify-content: space-between; margin-top: 1rem; font-size: 0.9em; color: #1a202c;">
                 <span><strong>{rec['effort']}</strong></span>
                 <span><strong>{rec['impact']}</strong></span>
                 <span><strong>{rec['category']}</strong></span>
