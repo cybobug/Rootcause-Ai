@@ -528,7 +528,8 @@ def apply_premium_styling():
     }
     
     .stTabs [data-baseweb="tab"] {
-        background: #f7fafc;
+        background: #2c3e50;
+        color: white;
         border-radius: 4px 4px 0 0;
         padding: 0.75rem 1rem;
         font-weight: 500;
@@ -1457,7 +1458,7 @@ def main():
         with st.expander("API Configuration", expanded=False):
             provider = st.radio(
                 "Choose LLM Provider",
-                options=["openai", "huggingface"],
+                options=["huggingface", "openai" ],
                 key="llm_provider",
                 horizontal=True
             )
@@ -2107,7 +2108,7 @@ def main():
             st.markdown("### System Information")
             
             st.markdown("""
-            <div style="padding: 1.5rem; background: #f8f9fa; 
+            <div style="padding: 1.5rem; background: #222222; color: #f4f4f4;
                         border-radius: 8px; margin: 1rem 0;">
                 <h3 style="margin-top: 0;">RootCause AI</h3>
                 <p><strong>Real-Time Statistical Analysis & AI Diagnostics</strong></p>
