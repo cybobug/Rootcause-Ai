@@ -1,7 +1,7 @@
 # 🔍 RootCause AI
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](./LICENSE)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](#-getting-started)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)]((https://rootcause-ai.streamlit.app/))
 [![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)](https://www.python.org/)
 
 > **RootCause AI** is an **LLM-powered incident analysis and root cause detection engine** that combines  
